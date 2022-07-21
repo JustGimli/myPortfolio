@@ -1,0 +1,40 @@
+body{
+    background-image: url(media/backround1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: border-box;
+}
+.profile{
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    height: 5000px;
+    top: 100%;
+    position:absolute;
+}
+
+.name{
+    margin: 25% auto;
+    width: 50%;
+    color: white;
+
+}
+
+.name h1, h2{
+    text-align: center;
+}
+
+.profile-h1{
+    color: rgb(5, 182, 252);
+}
+
+.profile-information{
+    display: inline-flex;
+}
+
+.profile-information img{
+    height: 200px;
+    width: 35%;
+
+}
