@@ -5,13 +5,13 @@ body{
     background-attachment: fixed;
     background-origin: border-box;
 }
-.profile{
+.background{
     width: 100%;
     background-color: white;
-    border-radius: 20px;
-    height: 5000px;
+    /* border-radius: 20px; */
     top: 100%;
     position:absolute;
+    
 }
 
 .name{
@@ -31,10 +31,27 @@ body{
 
 .profile-information{
     display: inline-flex;
+
 }
 
 .profile-information img{
     height: 200px;
     width: 35%;
 
+}
+
+.profile{
+    margin: 0 25%;
+}
+
+hr{
+    height: 0px;
+    color: rgb(172, 172, 172);
+    border-style: solid;
+}
+
+footer{
+    position: absolute;
+    background-color: chocolate;
+    width: 100%;
 }
