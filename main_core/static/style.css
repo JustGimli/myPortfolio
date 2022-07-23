@@ -25,7 +25,7 @@ body{
     text-align: center;
 }
 
-.profile-h1{
+.profile-h1,h1,h2, h3{
     color: rgb(5, 182, 252);
 }
 
@@ -54,4 +54,28 @@ footer{
     position: absolute;
     background-color: chocolate;
     width: 100%;
+}
+
+nav{
+    position: fixed;
+    width: 25%;
+    z-index: 1;
+    left: 90%;
+}
+
+footer hr{
+    width: 50%;
+}
+
+.color-grey{
+    color: grey;
+}
+
+.color-white{
+    color: azure;
+}
+
+.follow_img{
+    width: auto;
+    display: block;
 }

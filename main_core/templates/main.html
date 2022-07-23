@@ -1,50 +1,59 @@
 {% extends 'base.html' %}
 {% block body %}
-<!-- <header>its start</header>
-<nav></nav> -->
+<nav><ul>
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#experienses">experienses</a></li>
+    <li><a href="#Abilities">Abilities</a></li>
+    <li><a href="#Contact">Contact</a></li>
+
+</ul>
+</nav>
 <main>
-    <div class="name" title="Profile"><h1>Karpinchik Grigorii</h1><hr>
-        <h2>Interactive resume</h2>
+    <div class="name" title="Profile"><h1 class="color-white">Karpinchik Grigorii</h1><hr>
+        <h2 class="color-white">Interactive resume</h2>
     </div>
+    
     <section class="background">
+        
         <div class="profile">
+            
             <center>
                 <h1 class="profile-h1">Profile</h1>
-                <h3>Привет я Python-developer</h3>
+                <h3 class="color-grey">Привет я Python-developer</h3>
             </center><hr>
             <div class="profile-information">
                 <div class="aboutMe">
                     <h2>About Me</h2>
-                    <h3>
+                    <h4 class="color-grey">
                         text about me
-                    </h3>
+                    </h4>
                 </div>
                 <img src="https://android-obzor.com/wp-content/uploads/2022/02/5-8.jpg"  class="profile-img">
                 <div class="details">
-                    <h2>Details</h2>
-                    <h3>Имя:</h3>
-                    <h4>Григорий</h4>
-                    <h3>Фамилия:</h3>
-                    <h4>Карпинчик</h4>
-                    <h3>Возраст:</h3>
-                    <h4>16 лет.</h4>
-                    <h3>Расположение:</h3>
-                    <h4>г. Минск</h4>
+                    <h3>Details</h3>
+                    <h4>Имя:</h4>
+                    <h5 class="color-grey">Григорий</h5>
+                    <h4>Возраст:</h4>
+                    <h5 class="color-grey">16 лет.</h5>
+                    <h4>Расположение:</h4>
+                    <h5 class="color-grey">г. Минск,Республика Беларусь, Земля</h5>
+                    
                 </div>
+                <!-- <a class='follow_img' href="google.com"><img src="https://westernlaw.org/wp-content/uploads/2018/11/instagram-follow-button.png" alt="follow"></a> -->
             </div>
             <div class="experiense">
                 <center><h1>experienses</h1><hr></center>
                 <h3>Education</h3>
                 <dl class="education">
                     <dt>Минское Суворовское Военное училище</dt>
-                    <dd>Базовые знания и навыки. Здесь я увлекся программированием.</dd>
+                    <dd class="color-grey">Базовые знания и навыки. Здесь я увлекся программированием.</dd>
                 </dl><hr>
             </div>
             <div class="careers">
                 <h3>Careers</h3>
                 <dl class="education">
                     <dt>Kwork Frilance</dt>
-                    <dd>Здесь я разработывал чат-ботов для Telegram с импользованием Python и модулей, также SQL</dd>
+                    <dd class="color-grey">Здесь я разработывал чат-ботов для Telegram с импользованием Python и модулей, также SQL</dd>
                 </dl><hr>
             </div>
             <div class="abilities">
@@ -53,20 +62,20 @@
                     <tr>
                         <th>Skills</th>
                     </tr>
-                    <tr><td>Python</td></tr>
-                        <tr><td>CSS</td></tr>
-                        <tr><td>HTML</td></tr>
-                        <tr><td>JavaScript</td></tr>
-                        <tr><td>PostgreSQL</td></tr>           
+                    <tr><td class="color-grey">Python</td></tr>
+                        <tr><td class="color-grey">CSS</td></tr>
+                        <tr><td class="color-grey">HTML</td></tr>
+                        <tr><td class="color-grey">JavaScript</td></tr>
+                        <tr><td class="color-grey">PostgreSQL</td></tr>           
                 </table>
-                <p>Вы можете простмотреть этот код на GitHub: <a href="https://github.com/JustGimli/myPortfolio">ссылкас</a></p><hr>
+                <p class="color-grey">Вы можете простмотреть этот код на GitHub: <a href="https://github.com/JustGimli/myPortfolio">ссылкас</a></p><hr>
                 <table>
                     <tr><th>Languages</th></tr>
                     <tr>
-                        <td>English</td>
+                        <td class="color-grey">English</td>
                     </tr>
                     <tr>
-                        <td>Russian</td>
+                        <td class="color-grey">Russian</td>
                     </tr>
                     <tr>
                         <td>Belarussian</td>
@@ -76,27 +85,27 @@
                     <tr>
                         <th>Tools</th>
                     </tr>
-                    <tr>
+                    <tr class="color-grey">
                         <td>Git(1 year)</td>
                         <td>Firefox</td>
                     </tr>
-                    <tr>
+                    <tr class="color-grey">
                         <td>Windows</td>
                         <td>Sublime Text </td>
                     </tr>
-                    <tr>
+                    <tr class="color-grey">
                         <td>Visual Studio Code</td>
                         <td>Adobe Photoshop</td>
                     </tr>
-                    <tr>
+                    <tr class="color-grey">
                         <td>MS Office</td>
                         <td>Google Chrome</td>
                     </tr>
-                    <tr>
+                    <tr class="color-grey">
                         <td>Notepad++</td>
                         <td>UNIX(Ubuntu)</td>
                     </tr>
-                    <tr>
+                    <tr class="color-grey">
                         <td>pgadmin4</td>
                         <td>Windows7/10</td>
 
@@ -107,11 +116,12 @@
 
         </div>
         <footer>
-            <h1>Contact</h1><hr>
-        
+            <center><h2 class="color-white">Contact</h2><hr></center>
+            
         </footer> 
     </section>
     
 </main>
+
 
 {% endblock %}
