@@ -79,3 +79,7 @@ footer hr{
     width: auto;
     display: block;
 }
+
+nav a{
+    overflow: hidden;
+}

@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% block body %}
 <nav><ul>
-    <li><a href="#profile">Profile</a></li>
-    <li><a href="#experienses">experienses</a></li>
-    <li><a href="#Abilities">Abilities</a></li>
-    <li><a href="#Contact">Contact</a></li>
+    <li><button><a href="#profile">Profile</a></button></li>
+    <li><button><a href="#experienses">experienses</a></button></li>
+    <li><button><a href="#Abilities">Abilities</a></button></li>
+    <li><button><a href="#Contact">Contact</a></button></li>
 
 </ul>
 </nav>
@@ -15,13 +15,13 @@
     
     <section class="background">
         
-        <div class="profile">
+        <div class="profile" id="profile">
             
             <center>
-                <h1 class="profile-h1">Profile</h1>
+                <h1 class="profile-h1" >Profile</h1>
                 <h3 class="color-grey">Привет я Python-developer</h3>
             </center><hr>
-            <div class="profile-information">
+            <div class="profile-information" >
                 <div class="aboutMe">
                     <h2>About Me</h2>
                     <h4 class="color-grey">
@@ -41,7 +41,7 @@
                 </div>
                 <!-- <a class='follow_img' href="google.com"><img src="https://westernlaw.org/wp-content/uploads/2018/11/instagram-follow-button.png" alt="follow"></a> -->
             </div>
-            <div class="experiense">
+            <div class="experiense" id="experienses">
                 <center><h1>experienses</h1><hr></center>
                 <h3>Education</h3>
                 <dl class="education">
@@ -56,7 +56,7 @@
                     <dd class="color-grey">Здесь я разработывал чат-ботов для Telegram с импользованием Python и модулей, также SQL</dd>
                 </dl><hr>
             </div>
-            <div class="abilities">
+            <div class="abilities" id="Abilities">
                 <center><h1>Abilities</h1></center>
                 <table>
                     <tr>
@@ -115,7 +115,7 @@
 
 
         </div>
-        <footer>
+        <footer id="Contact">
             <center><h2 class="color-white">Contact</h2><hr></center>
             
         </footer> 
