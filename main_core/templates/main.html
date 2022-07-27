@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% block body %}
-<nav><ul>
-    <li><button><a href="#profile">Profile</a></button></li>
-    <li><button><a href="#experienses">experienses</a></button></li>
-    <li><button><a href="#Abilities">Abilities</a></button></li>
-    <li><button><a href="#Contact">Contact</a></button></li>
+<nav class="main-na"><ul>
+    <li href="#profile"><a href="#profile">Profile</a></li>
+    <li><a href="#experienses">experienses</a></li>
+    <li><a href="#Abilities">Abilities</a></li>
+    <li><a href="#Contact">Contact</a></li>
 
 </ul>
 </nav>
@@ -62,13 +62,13 @@
                     <tr>
                         <th>Skills</th>
                     </tr>
-                    <tr><td class="color-grey">Python</td></tr>
-                        <tr><td class="color-grey">CSS</td></tr>
-                        <tr><td class="color-grey">HTML</td></tr>
-                        <tr><td class="color-grey">JavaScript</td></tr>
-                        <tr><td class="color-grey">PostgreSQL</td></tr>           
+                        <tr class="stars1"><td class="color-grey" >Python</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
+                        <tr class="stars1"><td class="color-grey">CSS</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
+                        <tr class="stars1"><td class="color-grey">HTML</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
+                        <tr class="stars1"><td class="color-grey">JavaScript</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
+                        <tr class="stars1"><td class="color-grey">PostgreSQL</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>           
                 </table>
-                <p class="color-grey">Вы можете простмотреть этот код на GitHub: <a href="https://github.com/JustGimli/myPortfolio">ссылкас</a></p><hr>
+                <p class="color-grey">Вы можете простмотреть этот код на GitHub: <a   class='github' href="https://github.com/JustGimli/myPortfolio"><img  class='github' src="../static/media/github.jpg"></a></p><hr>
                 <table>
                     <tr><th>Languages</th></tr>
                     <tr>
