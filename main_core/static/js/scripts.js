@@ -8,7 +8,6 @@ $(document).ready(function(){
 
 
     $('nav li[href^="#"]').click(function(){
-        // ${this}.css
         var scroll_el = $(this).attr('href');
         var destination = $(scroll_el).offset().top - 60;
         if ($(scroll_el).length != 0){
@@ -39,13 +38,13 @@ $(document).ready(function(){
             $('nav li').css('background-color', '#222222')
             $('nav li[href="#Abilities"]').css('background-color', 'rgb(5, 182, 252)')
 
-        } else if(scr > Contact.top){
+        } else if(scr >= Contact.top-60){
             $('nav li').css('background-color', '#222222')
             $('nav li[href="#Contact"]').css('background-color', 'rgb(5, 182, 252)')
         }
 
         if (scr < $('.profile').offset().top){
-            $('nav').css({'position':'absolute', 'top':'110%'})
+            $('nav').css({'position':'absolute', 'top':'100%'})
         }
 
         if (scr > $('.profile-h1').offset().top){
