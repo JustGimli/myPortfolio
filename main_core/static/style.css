@@ -57,10 +57,12 @@ footer{
 }
 
 nav{
-    position: fixed;
+    position: absolute;
     width: 12%;
     z-index: 1;
     right: 4%;
+    top: 110%;
+
 }
 
 footer hr{
@@ -81,21 +83,17 @@ footer hr{
 }
 
 nav li{
-
+    color: azure;
     padding-top: 15px;
     padding-bottom: 15px;
     display: block;
     text-align: center;
     list-style-type: none;
-    background-color: chocolate;
-
+    background-color: #222222;
 
 }
 
-nav li:hover{
-    
-    transition: all .07s ease-in-out;
-}   
+
 
 .stars{
     width: 20%;
@@ -126,7 +124,7 @@ nav li a{
     color: black;
     text-decoration: none;
     opacity: 0.6;
-
+  
 
 }
 
