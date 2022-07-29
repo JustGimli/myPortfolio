@@ -1,5 +1,17 @@
 {% extends 'base.html' %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+<script type="text/javascript" src="../static/js/scripts.js"></script>
+{% endblock %}
+
 {% block body %}
+<nav class="navigator">
+    <a href="{{url_for('main')}}">Главная</a> |
+    <a href="{{url_for('articles')}}">Статьи</a>
+    
+    <button>Donate</button>
+</nav>
+
 <nav class="main-na">
     <ul>
         <li href="#profile">Profile</li>
@@ -29,7 +41,7 @@
                        <p>Я Python разработчик.</p>Люблю структуру и порядок, и я также выступаю за качество. Я люблю тратить время на исправление мелких деталей и оптимизацию приложений. Также мне нравится работать в команде, так быстрее учишься и многое другое.
                     </h4>
                 </div>
-                <img src="https://android-obzor.com/wp-content/uploads/2022/02/5-8.jpg"  class="profile-img">
+                <img src="../static/media/MyPhoto.jpg"  class="profile-img">
                 <div class="details">
                     <h3>Details</h3>
                     <h4>Имя:</h4>
@@ -77,8 +89,8 @@
                         <tr class="stars1"><td class="color-grey">JavaScript</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
                         <tr class="stars1"><td class="color-grey">PostgreSQL</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>           
                 </table>
-                <p class="color-grey">Вы можете простмотреть этот код на GitHub: <button class="github-button"> <a   class='github' href="https://github.com/JustGimli/myPortfolio"><img  class='github' src="../static/media/github.jpg"></a> </button></p><hr>
-                <table>
+                <p ><center class="color-grey" style="opacity: 0.6; padding-top: 2%;" > HTML,CSS,JS(framework),Python(framework) </center>  <center style="padding-top: 3%;"><button class="github-button"> <a   class='github' href="https://github.com/JustGimli/myPortfolio">See progect on GitHub</a> </button></center></p><hr>
+                <table >
                     <tr><th>Languages</th></tr>
                     <tr>
                         <td class="color-grey">English</td>
@@ -93,33 +105,27 @@
                         <td><img class="stars" src="../static/media/5star.jpg" ></td>
                     </tr>
                 </table><hr>
-                <table>
+                <table style="width: 110%;">
                     <tr>
                         <th>Tools</th>
                     </tr>
-                    <tr class="color-grey">
-                        <td>Git(1 year)</td><td><img class="stars" src="../static/media/5star.jpg" ></td>
-                        <td>Firefox</td><td><img class="stars" src="../static/media/5star.jpg" ></td>
+                    <tr class="color-grey"><td>Git(1 year)</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
+                    <tr class="color-grey"><td>Firefox</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
+                    
+                    <tr class="color-grey"><td>Windows</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
+                    <tr class="color-grey"><td>Sublime Text </td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
                     </tr>
-                    <tr class="color-grey">
-                        <td>Windows</td><td><img class="stars" src="../static/media/5star.jpg" ></td>
-                        <td>Sublime Text </td><td><img class="stars" src="../static/media/5star.jpg" ></td>
+                    <tr class="color-grey"><td>Visual Studio Code</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
+                    <tr class="color-grey"><td>Adobe Photoshop</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
                     </tr>
-                    <tr class="color-grey">
-                        <td>Visual Studio Code</td><td><img class="stars" src="../static/media/5star.jpg" ></td>
-                        <td>Adobe Photoshop</td><td><img class="stars" src="../static/media/5star.jpg" ></td>
+                    <tr class="color-grey"><td>MS Office</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
+                    <tr class="color-grey"><td>Google Chrome</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
                     </tr>
-                    <tr class="color-grey">
-                        <td>MS Office</td><td><img class="stars" src="../static/media/5star.jpg" ></td>
-                        <td>Google Chrome</td><td><img class="stars" src="../static/media/5star.jpg" ></td>
+                    <tr class="color-grey"><td>Notepad++</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
+                    <tr class="color-grey"><td>UNIX(Ubuntu)</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
                     </tr>
-                    <tr class="color-grey">
-                        <td>Notepad++</td><td><img class="stars" src="../static/media/5star.jpg" ></td>
-                        <td>UNIX(Ubuntu)</td><td><img class="stars" src="../static/media/5star.jpg" ></td>
-                    </tr>
-                    <tr class="color-grey">
-                        <td>pgadmin4</td><td><img class="stars" src="../static/media/5star.jpg" ></td>
-                        <td>Windows7/10</td><td><img class="stars" src="../static/media/5star.jpg" ></td>
+                    <tr class="color-grey"><td>pgadmin4</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
+                    <tr class="color-grey"><td>Windows7/10</td><td><img class="stars" src="../static/media/5star.jpg" ></td></tr>
 
                 </table>
             </div>
@@ -128,8 +134,8 @@
 
         </div>
         <footer id="Contact">
-            <center><h2 class="color-white">Contact</h2><hr></center>
-            
+            <center><h1 class="color-white">Contact</h1><hr></center>
+            <!-- <img src="https://flyclipart.com/thumb2/instagram-logo-design-vector-free-download-83680.png" class="inst"> -->
         </footer> 
     </section>
     

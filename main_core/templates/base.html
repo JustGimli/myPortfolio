@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
-    <title>Document</title>
+    {% block head %}
+    {% endblock %}
+    
+    <title>JustGimli</title>
     <script type="text/javascript" src="../static/js/jquery-color.min.js"></script>
     <script type="text/javascript" src="../static/js/jquery.min.js"></script>
-    <script type="text/javascript" src="../static/js/scripts.js"></script>
+    
 </head>
 <body>
     {% block body %}
