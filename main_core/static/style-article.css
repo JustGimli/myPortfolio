@@ -36,7 +36,8 @@ body{
     top: 15%;
 }
 .articles .title-img{
-    width: 90%;
+    width: auto;
+    max-width: 90%;
 }
 
 .articles h2{
