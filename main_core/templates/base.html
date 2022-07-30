@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% block head %}
-    {% endblock %}
-    
-    <title>JustGimli</title>
     <script type="text/javascript" src="../static/js/jquery-color.min.js"></script>
     <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    {% block head %}
+    {% endblock %}
+
     
 </head>
 <body>
+    <nav class="navigator">
+        <a href="{{url_for('main')}}">Главная</a> |
+        <a href="{{url_for('articles')}}">Статьи</a>
+        
+        <button>Donate</button>
+    </nav>  
     {% block body %}
     {% endblock %}
 </body>

@@ -1,0 +1,63 @@
+.navigator{
+    background-color: #434242;
+    width: 100%;
+    line-height: 1%;
+    height: 3%;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    top: 0%;
+}
+
+.navigator a{
+    text-decoration: none;
+    color: #F3EFE0;
+}
+
+.navigator button{
+    color: #F3EFE0;
+    position: relative;
+    left: 40%;
+    background-color: #9e9516;
+    border-radius: 5px;
+    border-color: #434242;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+body{
+    background-image: url(media/back.png);
+}
+
+.articles{
+    width: 70%;
+    position: absolute;
+    height: 110%;
+    left: 15%;
+    top: 15%;
+}
+.articles .title-img{
+    width: 90%;
+}
+
+.articles h2{
+    width: 100%;
+}
+.article-example{
+
+    border-radius: 5px;
+    background-color: #F3EFE0;
+    padding-bottom: 3%;
+}
+
+.icon-eye{
+    position: relative;
+    width: 1%;
+    left: 91%;
+    top: 1%;
+}
+
+.views{
+    width: 1%;
+    left: 91.5%;
+    position: relative;
+}

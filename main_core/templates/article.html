@@ -1,4 +1,23 @@
 {% extends 'base.html' %}
+
+{% block head %}
+<meta name="article" >
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style-article.css')}}">
+<title>JustGimli-Articles</title>
+<script type="text/javascript" src="../static/js/scripts-article.js"></script>  
+{% endblock %}
+   
 {% block body %}
-<h1>hello</h1>
+<div class="articles">
+    <div class="article-example"><center><h2>Заголовок</h2>
+        <img class="title-img" src="../static/media/backround1.jpg" ></center>
+        <img src="https://cdn-icons-png.flaticon.com/512/58/58976.png" class="icon-eye"><span class="views">1</span>
+    </div><hr>
+    <div class="article-example"><center><h2>Заголовок</h2>
+        <img class="title-img" src="../static/media/backround1.jpg" ></center>
+        <img src="https://cdn-icons-png.flaticon.com/512/58/58976.png" class="icon-eye"><span class="views">1</span>
+    </div><hr>
+        
+    
+</div>
 {% endblock %}

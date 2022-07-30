@@ -1,5 +1,9 @@
 $(document).ready(function(){
-    
+
+    if($('meta').attr('name')=='main'){
+        $('.navigator a:first-child').css('color', '#1c8784')
+    }
+
     var experiense = $( ".experiense" ).offset()
     var abilities = $( ".abilities" ).offset()
     var Contact = $( "#Contact" ).offset()
@@ -61,6 +65,8 @@ $(document).ready(function(){
         if (scr+150 > $('.profile-h1').offset().top){
             $('.main-na').css({'position':'fixed', 'top':'10%'})
         }
+
+        
     })
     
 

@@ -111,7 +111,7 @@ body{
 
 .navigator a{
     text-decoration: none;
-    color: #F3EFE0;
+    color: #F3EFE0; 
 }
 
 .navigator button{
@@ -123,7 +123,6 @@ body{
     border-color: #434242;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-
 
 
 .main-na{
