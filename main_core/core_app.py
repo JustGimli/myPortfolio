@@ -3,7 +3,7 @@ from configyre.config import *
 import sys
 
 app = Flask(__name__)
-app.config.from_object(testingConfig)
+app.config.from_object(config)
 
 @app.route('/')
 def main():
@@ -15,4 +15,4 @@ def articles():
     return render_template('article.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run()
