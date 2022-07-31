@@ -62,3 +62,10 @@ body{
     left: 91.5%;
     position: relative;
 }
+
+/* добавление статей */
+.add_article{
+    position: fixed;
+    bottom: -23%;
+    left: 75%;
+}
