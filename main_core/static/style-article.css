@@ -61,11 +61,48 @@ body{
     width: 1%;
     left: 91.5%;
     position: relative;
+    color: #22A39F;
 }
 
 /* добавление статей */
 .add_article{
     position: fixed;
-    bottom: -23%;
-    left: 75%;
+    bottom: -35%;
+    left: 3%;
+    width: 100%;
+
 }
+
+.date{
+    color: #22A39F;
+}
+
+.a_to_article{
+    text-decoration: none;
+    color: #22A39F;
+}
+
+.add-articles{
+    color: #434242;
+    border-radius: 5px;
+    border-width: 0ch;
+}
+
+.color-42{
+    left: -3%;
+    background-color: #434242;
+    width: 100%;
+    position: relative;
+    border-radius: 5px  ;
+}
+
+.form{
+    padding-bottom: 1%;
+}
+
+dt,dd{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 5px;
+}
+

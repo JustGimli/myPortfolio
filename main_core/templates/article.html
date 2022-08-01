@@ -10,9 +10,10 @@
 {% block body %}
 <div class="articles">
     {% for art in articles %}
-    <div class="article-example"><center><h2><a href="{{ art.a_to_article }}">{{ art.name }}</a> </h2>
+    <div class="article-example"><center><h2><a href="{{ art.a_to_article }}" class="a_to_article">{{ art.name }}</a></h2>
         <img class="title-img" src="{{ art.a_to_img }}" ></center>
-        <img src="https://cdn-icons-png.flaticon.com/512/58/58976.png" class="icon-eye"><span class="views">{{ art.views }}</span>
+        <img href="{{ art.a_to_article }}" src="https://cdn-icons-png.flaticon.com/512/58/58976.png" class="icon-eye"><span class="views">{{ art.views }}</span>
+        <span class="date">{{ art.date }}</span>
     </div><hr>
     {% else %}
     <divy>статей пока нет</div>
@@ -22,17 +23,21 @@
 
 <div class="add_article">
     <button class="add-articles"> Добавить статью</button>
-    <form action="{{url_for('add_article')}}" method="post" class="form">
-        <dl>
-            <dt>Название</dt>
-            <dd><input type="text" name="name-article"></dd>
-            <dt>Ссылка на статью</dt>
-            <dd><input type="text" name="href-article"></dd>
-            <dt>Изображение</dt>
-            <dd><input type="image" name="image" enctype="multipart/form-data" ></dd>
-            <dt><input type="submit" value="Отправить статью"></dt>
-        </dl>
-    </form>
+    <div class="color-42">
+        <center>
+            <form action="{{url_for('add_article')}}" method="post" class="form" enctype="multipart/form-data" >
+                <dl>
+                    <dt>Название</dt>
+                    <dd><input type="text" name="name-article" autofocus ></dd>
+                    <dt>Ссылка на статью</dt>
+                    <dd><input type="text" name="href-article"></dd>
+                    <dt>Изображение</dt>
+                    <dd><input type="file" name="image" accept="image/png" placeholder="Only png-type"></dd>
+                    <dt><input type="submit" value="Отправить статью"></dt>
+                </dl>
+            </form>
+        </center>
+    </div>
 </div>
 
 {% endblock %}

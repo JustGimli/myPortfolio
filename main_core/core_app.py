@@ -1,10 +1,10 @@
-from crypt import methods
 from flask import *
 from configyre.config import *
 from sqlite3 import *
 from conf import config
 import random 
 from PIL import Image
+from db.db import upload_views
 
 app = Flask(__name__)
 app.config.from_object(config)
@@ -47,29 +47,40 @@ def main():
     return render_template('main.html')
 
 
-@app.route('/articles')
+@app.route('/articles/')
 def articles():
     db = get_db()
     cur = db.cursor()
-    cur.execute('SELECT * FROM articles ORDER BY id')
+    cur.execute('SELECT * FROM articles ORDER BY date DESC')
     art = cur.fetchall()
     return render_template('article.html', articles = art)
 
 
 @app.route('/add-articles', methods=['POST'])
 def add_article():
+
     if request.form['name-article'] == '':
         flash('Извините введите текст')
     else:
-        path = 'db/article-img/' + str(random.randint(1,123123123)) + '.jpg'
-        img =request.data[request.form['image']]
-        img.save(f'{path}', 'JPG')
-        
+        id = random.randint(1,123123123)  
+
+        path = url_for('static', filename=f'article-img/{str(id) + ".png"}')
+        img = Image.open(request.files['image'])
+        img.save(f'{app.root_path + path}')
+
         db = get_db()
         cur = db.cursor()
-        cur.execute('INSERT INTO articles (id,name,a_to_article,a_to_img) VALUES(?,?,?,?)',[0,request.form['name-article'], request.form['href-article'], path])
+        cur.execute('INSERT INTO articles (id,name,a_to_article,a_to_img) VALUES(?,?,?,?)',[id,request.form['name-article'], request.form['href-article'], path])
         db.commit()
+        flash('Добавлено')
     return redirect(url_for('articles'))
+
+@app.route('/views', methods=['POST'])
+def get_views():
+    upload_views(request.form['value'], request.form['href'] )
+
+    return 'url_for()'
+
 
 if __name__ == '__main__':
     app.run()
