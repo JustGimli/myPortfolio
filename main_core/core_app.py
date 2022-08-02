@@ -58,21 +58,22 @@ def articles():
 
 @app.route('/add-articles', methods=['POST'])
 def add_article():
-
-    if request.form['name-article'] == '':
-        flash('Извините введите текст')
-    else:
-        id = random.randint(1,123123123)  
-
-        path = url_for('static', filename=f'article-img/{str(id) + ".png"}')
-        img = Image.open(request.files['image'])
-        img.save(f'{app.root_path + path}')
-
-        db = get_db()
-        cur = db.cursor()
-        cur.execute('INSERT INTO articles (id,name,a_to_article,a_to_img) VALUES(?,?,?,?)',[id,request.form['name-article'], request.form['href-article'], path])
-        db.commit()
+    try:
+        if request.form['name-article']  == '':
+            flash('Извините введите текст')
+        else:
+            id = random.randint(1,123123123)  
+            path = url_for('static', filename=f'article-img/{str(id) + ".png"}')
+            img = Image.open(request.files['image'])
+            img.save(f'{app.root_path + path}')
+            db = get_db()
+            cur = db.cursor()
+            cur.execute('INSERT INTO articles (id,name,a_to_article,a_to_img,textarea,views) VALUES(?,?,?,?,?,?)',[id,request.form['name-article'], request.form['href-article'], path,request.form.get('description'),1])
+            db.commit()
         flash('Добавлено')
+    except:
+        flash('Извините. Попробуйте позже')
+
     return redirect(url_for('articles'))
 
 @app.route('/views', methods=['POST'])
@@ -81,6 +82,5 @@ def get_views():
 
     return 'url_for()'
 
-
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')

@@ -15,13 +15,17 @@
 }
 
 .navigator button{
-    color: #F3EFE0;
     position: relative;
     left: 40%;
     background-color: #9e9516;
     border-radius: 5px;
     border-color: #434242;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.navigator .href-donate{
+    text-decoration: none;
+    color: #F3EFE0;
 }
 
 body{
@@ -46,7 +50,7 @@ body{
 .article-example{
 
     border-radius: 5px;
-    background-color: #F3EFE0;
+    background-color: #434242;
     padding-bottom: 3%;
 }
 
@@ -79,13 +83,19 @@ body{
 
 .a_to_article{
     text-decoration: none;
-    color: #22A39F;
+    color: #F3EFE0;
 }
 
 .add-articles{
-    color: #434242;
+    background-color: #434242;
+    color: #F3EFE0;
     border-radius: 5px;
     border-width: 0ch;
+}
+
+.add-articles:hover{
+    background-color: #313131;
+    color:#22A39F;
 }
 
 .color-42{
@@ -105,4 +115,12 @@ dt,dd{
     margin-bottom: 1%;
     border-radius: 5px;
 }
+
+.textarea-1{
+    position: absolute;
+    left: 70%;
+    bottom: 20%;
+  
+}
+
 

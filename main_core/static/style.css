@@ -115,7 +115,6 @@ body{
 }
 
 .navigator button{
-    color: #F3EFE0;
     position: relative;
     left: 40%;
     background-color: #9e9516;
@@ -203,4 +202,9 @@ footer{
 
 footer hr{
     width: 70%;
+}
+
+.navigator .href-donate{
+    text-decoration: none;
+    color: #F3EFE0;
 }

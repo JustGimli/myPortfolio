@@ -11,7 +11,7 @@ $(document).ready(function(){
     let a = false
 
     if($('meta').attr('name')=='article'){
-        $('.navigator a:last-of-type').css({'color': '#1c8784','text-decoration': 'underline'})
+        $('.navigator .a-navbar:last-of-type').css({'color': '#1c8784','text-decoration': 'underline'})
     }
 
     $('.add-articles').click(function(){

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    
     {% block head %}
     {% endblock %}
 
@@ -9,10 +10,10 @@
 </head>
 <body>
     <nav class="navigator">
-        <a href="{{url_for('main')}}">Главная</a> |
-        <a href="{{url_for('articles')}}">Статьи</a>
+        <a class="a-navbar" href="{{url_for('main')}}">Главная</a> |
+        <a class="a-navbar"  href="{{url_for('articles')}}">Статьи</a>
         
-        <button>Donate</button>
+        <button ><a class="href-donate" href="https://my.qiwi.com/Petr-MmGR4GYiLG">Donate</a> </button>
     </nav>  
     {% block body %}
     {% endblock %}

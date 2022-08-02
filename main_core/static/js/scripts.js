@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     if($('meta').attr('name')=='main'){
-        $('.navigator a:first-child').css({'color': '#1c8784','text-decoration': 'underline'})
+        $('.navigator .a-navbar:first-child').css({'color': '#1c8784','text-decoration': 'underline'})
     }
 
     var experiense = $( ".experiense" ).offset()
