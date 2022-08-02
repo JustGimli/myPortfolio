@@ -102,7 +102,6 @@ body{
     background-color: #434242;
     width: 100%;
     line-height: 1%;
-    height: 3%;
     border-radius: 5px;
     text-align: center;
     position: absolute;
@@ -195,7 +194,7 @@ footer{
     position: absolute;
     background-color: #434242;
     width: 100%;
-    height: 30%;
+    height: 20%;
 }
 
 
@@ -207,4 +206,16 @@ footer hr{
 .navigator .href-donate{
     text-decoration: none;
     color: #F3EFE0;
+}
+
+.contact-info{
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    color: #22A39F;
+
+}
+
+.contact-info img{
+    width: 4%;
 }

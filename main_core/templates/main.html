@@ -2,6 +2,7 @@
 {% block head %}
 <meta name="main">
 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='adoptive-main.css') }}">
 <title> JustGimli-Profile</title>
 {% endblock %}
 
@@ -131,11 +132,12 @@
         </div>
         <footer id="Contact">
             <center><h1 class="color-white">Contact</h1><hr></center>
-            <!-- <img src="https://flyclipart.com/thumb2/instagram-logo-design-vector-free-download-83680.png" class="inst"> -->
+                <p class="contact-info"><img src="../static/media/tg1.ico" style="margin-right: 5%;">https://t.me/in_touch_prog</p>
+                
         </footer> 
     </section>
     
 </main>
 <script type="text/javascript" src="../static/js/scripts.js"></script>  
 
-{% endblock %}
+{% endblock %}  

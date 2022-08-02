@@ -2,7 +2,6 @@
     background-color: #434242;
     width: 100%;
     line-height: 1%;
-    height: 3%;
     border-radius: 5px;
     text-align: center;
     position: absolute;
@@ -16,7 +15,6 @@
 
 .navigator button{
     position: relative;
-    left: 40%;
     background-color: #9e9516;
     border-radius: 5px;
     border-color: #434242;
@@ -114,6 +112,7 @@ dt,dd{
     margin-top: 1%;
     margin-bottom: 1%;
     border-radius: 5px;
+    color: #22A39F;
 }
 
 .textarea-1{
@@ -123,4 +122,23 @@ dt,dd{
   
 }
 
+.textarea-1 textarea{
+    border-radius: 5px;
+} 
 
+.send-art{
+    background-color: #22A39F; 
+    border-radius: 5px;
+    border-width: 0ch;
+    color: #434242;
+}
+
+.send-art:hover {
+    background-color: #1e918d;
+    color: #F3EFE0;
+}
+
+.articles p {
+    margin-left: 3%;
+    color: #F3EFE0;
+}

@@ -1,0 +1,25 @@
+@media only screen and (max-width:800px){
+    .main-na{
+        position: absolute;
+        display: none;
+    }
+    .profile-information{
+        display: block;
+        flex-wrap: wrap;
+    }
+    .aboutMe, .details{
+        width: 100%;
+    }
+    .profile-img{
+        width: 70%;
+        position: relative;
+        left: 10%;
+    }
+    .stars{
+        width: 35%;
+        
+    }
+    .github-button{
+        width: 50%;
+    }
+}

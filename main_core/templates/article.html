@@ -4,7 +4,8 @@
 <meta name="article" >
 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style-article.css')}}">
 <title>JustGimli-Articles</title>
-<script type="text/javascript" src="../static/js/scripts-article.js"></script>  
+<script type="text/javascript" src="../static/js/scripts-article.js"></script> 
+<link rel="stylesheet" type="text/css" href="../static/adoptive-articles.css"> 
 {% endblock %}
    
 {% block body %}
@@ -33,8 +34,8 @@
                     <dt>Ссылка на статью</dt>
                     <dd><input type="text" name="href-article"></dd>
                     <dt>Изображение</dt>
-                    <dd><input type="file" name="image" accept="image/png" placeholder="Only png-type"></dd>
-                    <dt><input type="submit" value="Отправить статью"></dt>
+                    <dd><input type="file" name="image" accept="image/png" ></dd>
+                    <dt><input type="submit" value="Отправить статью"  class="send-art"></dt>
                 
                 </dl>
                 <dl class="textarea-1">

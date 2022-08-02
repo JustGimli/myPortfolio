@@ -14,17 +14,22 @@ $(document).ready(function(){
         $('.navigator .a-navbar:last-of-type').css({'color': '#1c8784','text-decoration': 'underline'})
     }
 
+    
+
     $('.add-articles').click(function(){
         if( a === false ){
             $('.add_article').animate({
                 bottom: '1%'
             })
+            $('.add-articles').css('position','fixed')
+
             a = true
         }else if( a === true){
             $('.add_article').animate({
                 bottom: '-35%'
             })
             a = false
+            $('.add-articles').css('position','relative')
         }
         
     })
