@@ -68,7 +68,7 @@ body{
 
 /* добавление статей */
 .add_article{
-    position: fixed;
+    position: fixed;    
     bottom: -35%;
     left: 3%;
     width: 100%;

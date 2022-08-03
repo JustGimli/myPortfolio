@@ -1,3 +1,5 @@
+
+
 @media only screen and (max-width:800px){
     .main-na{
         position: absolute;
@@ -8,7 +10,7 @@
         flex-wrap: wrap;
     }
     .aboutMe, .details{
-        width: 100%;
+        width: 95%;
     }
     .profile-img{
         width: 70%;
@@ -16,10 +18,25 @@
         left: 10%;
     }
     .stars{
-        width: 35%;
+        width: 25%;
         
     }
     .github-button{
         width: 50%;
+    }
+    .profile{
+        margin: 0% 0%;
+    }
+    
+}
+
+
+@media only screen and (max-width:600px){
+    .stars{
+        width: 35%;
+    }
+    
+    .html-css{
+        display: none;
     }
 }

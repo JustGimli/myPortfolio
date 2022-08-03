@@ -59,7 +59,7 @@ def articles():
 @app.route('/add-articles', methods=['POST'])
 def add_article():
     try:
-        if request.form['name-article']  == '':
+        if not request.form['name-article'] :
             flash('Извините введите текст')
         else:
             id = random.randint(1,123123123)  
