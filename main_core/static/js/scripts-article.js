@@ -18,18 +18,16 @@ $(document).ready(function(){
 
     $('.add-articles').click(function(){
         if( a === false ){
-            $('.add_article').animate({
-                bottom: '1%'
-            })
-            $('.add-articles').css('position','fixed')
+            $('.color-42').animate({
+                bottom: '10%'
+            })  
 
             a = true
         }else if( a === true){
-            $('.add_article').animate({
+            $('.color-42').animate({
                 bottom: '-35%'
             })
             a = false
-            $('.add-articles').css('position','relative')
         }
         
     })
