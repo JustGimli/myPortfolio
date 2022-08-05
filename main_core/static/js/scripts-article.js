@@ -18,15 +18,46 @@ $(document).ready(function(){
 
     $('.add-articles').click(function(){
         if( a === false ){
-            $('.color-42').animate({
-                bottom: '10%'
-            })  
+            if ($(window).width() <='900' ){
+                $('.color-42').animate({
+                    bottom: '1%'
+                })  
+                $(this).animate({
+                    bottom: '30%'
+                })
+            }else if($(window).width() <= '1400' ){
+                $('.color-42').animate({
+                    bottom: '1%'
+                })  
+                $(this).animate({
+                    bottom: '38%'
+                })
+            }else if($(window).width() <= '1700'){
+                $('.color-42').animate({
+                    bottom: '1%'
+                })  
+                $(this).animate({
+                    bottom: '43%'
+                })
+            }else if($(window).width() <= '2000'){
+                $('.color-42').animate({
+                    bottom: '1%'
+                })  
+                $(this).animate({
+                    bottom: '45%'
+                    
+                })
+            }
 
             a = true
         }else if( a === true){
             $('.color-42').animate({
-                bottom: '-35%'
+                bottom: '-50%'
             })
+            $(this).animate({
+                bottom: '3%'
+            })
+            a = true
             a = false
         }
         
