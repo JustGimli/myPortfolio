@@ -13,8 +13,8 @@
     {% for art in articles %}
     <div class="article-example"><center><h2><a href="{{ art.a_to_article }}" class="a_to_article">{{ art.name }}</a></h2>
         <img class="title-img" src="{{ art.a_to_img }}" ></center>
-        <p>{{art.textarea}}</p>
-        <img href="{{ art.a_to_article }}" src="https://cdn-icons-png.flaticon.com/512/58/58976.png" class="icon-eye"><span class="views">{{ art.views }}</span>
+        <article>{{art.textarea}}</article>
+        <span class="views">П.: {{ art.views }}</span>
         <span class="date">{{ art.date.split()[0] }}</span>
     </div><hr>
     {% else %}
@@ -25,26 +25,30 @@
 
 <div class="add_article">
     <button class="add-articles"> Добавить статью</button>
+ 
     <div class="color-42">
-        <center>
-            <form id="form-for-textarea"  action="{{url_for('add_article')}}" method="post" class="form" enctype="multipart/form-data" >
-                <dl>
-                    <dt>Название</dt>
-                    <dd><input type="text" name="name-article"  ></dd>
-                    <dt>Ссылка на статью</dt>
-                    <dd><input type="text" name="href-article"></dd>
-                    <dt>Изображение</dt>
-                    <dd><input type="file" name="image" accept="image/png" ></dd>
-                    <dt><input type="submit" value="Отправить статью"  class="send-art"></dt>
-                
-                </dl>
-                <dl class="textarea-1">
-                    <dt>Описание</dt>           
-                    <dd><textarea name="description"  cols="40" rows="10"></textarea></dd>
-                </dl>
-            </form>
+        
+    
+        <form id="form-for-textarea"  action="{{url_for('add_article')}}" method="post" class="form" enctype="multipart/form-data" >
+            <dl class="dl-form-main">
+                <dt>Название</dt>
+                <dd><input type="text" name="name-article"  ></dd>
+                <dt>Ссылка на статью</dt>
+                <dd><input type="text" name="href-article"></dd>
+                <dt>Изображение</dt>
+                <dd><input type="file" name="image" accept="image/png" ></dd>
+                <dt><input type="submit" value="Отправить статью"  class="send-art"></dt>
             
-        </center>
+            </dl>
+            <dl class="textarea-1">
+                <dt>Описание</dt>           
+                <dd><textarea name="description"  cols="40" rows="10"></textarea></dd>
+            </dl>
+        </form>
+            
+        
+        
+        
     </div>
 </div>
 

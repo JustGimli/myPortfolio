@@ -19,11 +19,13 @@ $(document).ready(function(){
     $('.add-articles').click(function(){
         if( a === false ){
             if ($(window).width() <='900' ){
+                $('.textarea-1').css('display','none')
+                $('.dl-form-main').css('left','20%')
                 $('.color-42').animate({
                     bottom: '1%'
                 })  
                 $(this).animate({
-                    bottom: '30%'
+                    bottom: '33 %'
                 })
             }else if($(window).width() <= '1400' ){
                 $('.color-42').animate({
@@ -37,16 +39,22 @@ $(document).ready(function(){
                     bottom: '1%'
                 })  
                 $(this).animate({
-                    bottom: '43%'
+                    bottom: '40%'
                 })
             }else if($(window).width() <= '2000'){
                 $('.color-42').animate({
                     bottom: '1%'
                 })  
                 $(this).animate({
-                    bottom: '45%'
+                    bottom: '39%'
                     
                 })
+            }else{
+                $('.color-42').animate({
+                    bottom: '1%'
+                })  
+                $(this).animate({
+                    bottom: '43%'})
             }
 
             a = true

@@ -115,10 +115,10 @@ body{
 
 .navigator button{
     position: relative;
-    left: 40%;
     background-color: #9e9516;
     border-radius: 5px;
     border-color: #434242;
+    right: 0%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 

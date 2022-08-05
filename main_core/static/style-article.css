@@ -53,15 +53,15 @@ body{
 }
 
 .icon-eye{
-    position: relative;
-    width: 1%;
-    left: 91%;
-    top: 1%;
+    position: absolute;
+    width: 3%;
+    left: 77%;
+
 }
 
 .views{
-    width: 1%;
-    left: 91.5%;
+    width: 3%;
+    left: 81%;
     position: relative;
     color: #22A39F;
 }
@@ -76,6 +76,7 @@ body{
 
 .date{
     color: #22A39F;
+    padding-left: 3%;
 }
 
 .a_to_article{
@@ -120,14 +121,11 @@ dt,dd{
 
 .textarea-1{
     position: absolute;
-    left: 70%;
+    left: 55%;
     bottom: 20%;
+    border-radius: 5px;
   
 }
-
-.textarea-1 textarea{
-    border-radius: 5px;
-} 
 
 .send-art{
     background-color: #22A39F; 
@@ -141,7 +139,17 @@ dt,dd{
     color: #F3EFE0;
 }
 
-.articles p {
+.articles article {
     margin-left: 3%;
     color: #F3EFE0;
+    width:95%;
+    height: auto;
+    word-wrap: break-word;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.dl-form-main{
+    position: relative;
+    left: 35%;
 }
