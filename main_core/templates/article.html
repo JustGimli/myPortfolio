@@ -18,7 +18,7 @@
         <span class="date">{{ art.date.split()[0] }}</span>
     </div><hr>
     {% else %}
-    <divy>статей пока нет</div>
+    <div>статей пока нет</div>
     {% endfor %}
     
 </div>
@@ -27,7 +27,15 @@
     <button class="add-articles"> Добавить статью</button>
  
     <div class="color-42">
-        
+        <nav class="get-descript"><table class="table">
+            <tr>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+            </tr>   
+            
+        </table></nav>
     
         <form id="form-for-textarea"  action="{{url_for('add_article')}}" method="post" class="form" enctype="multipart/form-data" >
             <dl class="dl-form-main">

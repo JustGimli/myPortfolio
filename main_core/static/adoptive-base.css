@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width: 1399px){
     .navigator button{
         left: 40%;
     }
@@ -6,7 +6,7 @@
 
 @media only screen and (max-width: 1200px){
     .navigator button{
-        left: 20%;
+        left:1%;
     }
 }
 
