@@ -16,21 +16,24 @@ $(document).ready(function(){
         $('.navigator .a-navbar:last-of-type').css({'color': '#1c8784','text-decoration': 'underline'})
     }
 
-    $('.table tr:first-child').click(function(){
-
-        $('.form dl:first-child').animate({
-            left: '25%'
+    $('.tr-button').click(function(e){
+        e.stopPropagation()
+        alert('asd')
+        $('.dl-form-main').animate({
+            left: '20%'
         })
 
         $('.form dl:last-child').animate({
-            left: '-150%'
+            left: '-150 %'
 
         })
+        
         
         
         
     })
-    $('.table tr:last-child').click(function(){
+    $('.table tr:last-child').mouseup(function(e){
+        e.stopPropagation()
         $('.form dl:first-child').animate({
             left:'-100%'
         })
@@ -38,8 +41,10 @@ $(document).ready(function(){
             right:'9%',
             left:'0%'
         })
+
     })
-    $('.add-articles').click(function(){
+    $('.add-articles').mousedown(function(e){
+        e.stopPropagation()
         if( a === false ){
             if ($(window).width() <='900' ){
                 $('.textarea-1').css({'right':'-150%', 'bottom':'1%', 'text-align':'center'})
