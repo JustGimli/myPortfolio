@@ -13,7 +13,7 @@ app.config.from_object(config)
 
 def connect_db():
 
-    con = connect('/main_core/db/article.db')
+    con = connect('//main_core/db/article.db')
     con.row_factory = Row
 
     return con
