@@ -3,3 +3,8 @@ class config():
     DEBUG = False
     TESTING = False
 
+
+
+class testconf(config):
+    TESTING=True
+    DEBUG=True
