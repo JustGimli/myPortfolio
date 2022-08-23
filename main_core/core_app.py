@@ -13,7 +13,7 @@ app.config.from_object(config)
 
 def connect_db():
 
-    con = connect('/home/grirogii/progects/myPortfolio/main_core/db/article.db')
+    con = connect('main_core/db/article.db')
     con.row_factory = Row
 
     return con
@@ -24,7 +24,7 @@ def init_db():
     with app.app_context():
         db = get_db()
 
-        with app.open_resource('/home/grirogii/progects/myPortfolio/main_core/db/shem.sql','r') as f:
+        with app.open_resource('main_core/db/shem.sql','r') as f:
             db.cursor().executescript(f.read())
         db.commit()
 
@@ -38,6 +38,7 @@ def get_db():
 
 @app.teardown_appcontext
 def close_db(error):
+
     if hasattr(g, 'sqlite_db'):
         g.sqlite_db.close()
 
@@ -76,11 +77,13 @@ def add_article():
 
     return redirect(url_for('articles'))
 
+
 @app.route('/views', methods=['POST'])
 def get_views():
     upload_views(request.form['value'], request.form['href'] )
 
     return 'url_for()'
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
