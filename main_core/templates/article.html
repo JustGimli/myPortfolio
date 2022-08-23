@@ -22,20 +22,13 @@
     {% endfor %}
     
 </div>
-<button class="add-articles"> Добавить статью</button>
+
 <div class="add_article">
-    
+    <button class="add-articles"> Добавить статью</button>
  
     <div class="color-42">
-        <nav class="get-descript"><table class="table">
-            <tr  class="tr-button">
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>2</td>
-            </tr>   
-            
-        </table></nav>
+        <nav class="get-descript">
+            <button class="button-get-desc">2</button></nav>
     
         <form id="form-for-textarea"  action="{{url_for('add_article')}}" method="post" class="form" enctype="multipart/form-data" >
             <dl class="dl-form-main">
@@ -45,12 +38,13 @@
                 <dd><input type="text" name="href-article"></dd>
                 <dt>Изображение</dt>
                 <dd><input type="file" name="image" accept="image/png" ></dd>
-                <dt><input type="submit" value="Отправить статью"  class="send-art"></dt>
+                <p class="p-form">Click 2.Before this check form</p>
             
             </dl>
             <dl class="textarea-1">
                 <dt>Описание</dt>           
                 <dd><textarea name="description"  cols="40" rows="10"></textarea></dd>
+                <dt><input type="submit" value="Отправить статью"  class="send-art"></dt>
             </dl>
         </form>
             

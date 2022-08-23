@@ -16,24 +16,7 @@ $(document).ready(function(){
         $('.navigator .a-navbar:last-of-type').css({'color': '#1c8784','text-decoration': 'underline'})
     }
 
-    $('.tr-button').click(function(e){
-        e.stopPropagation()
-        alert('asd')
-        $('.dl-form-main').animate({
-            left: '20%'
-        })
-
-        $('.form dl:last-child').animate({
-            left: '-150 %'
-
-        })
-        
-        
-        
-        
-    })
-    $('.table tr:last-child').mouseup(function(e){
-        e.stopPropagation()
+    $('.button-get-desc').click(function(){
         $('.form dl:first-child').animate({
             left:'-100%'
         })
@@ -43,11 +26,10 @@ $(document).ready(function(){
         })
 
     })
-    $('.add-articles').mousedown(function(e){
-        e.stopPropagation()
+    $('.add-articles').click(function(){
         if( a === false ){
             if ($(window).width() <='900' ){
-                $('.textarea-1').css({'right':'-150%', 'bottom':'1%', 'text-align':'center'})
+                $('textarea').attr({'rows':'7','cols':'35'})
                 $('.dl-form-main').css('left','20%')
                 $('.color-42').animate({
                     bottom: '1%'

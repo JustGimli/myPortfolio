@@ -1,3 +1,30 @@
-@media only screen  and (max-width:800px){
+@media only screen  and (min-width:1200px){
+    .get-descript{
+        display: none;
+    }
+    .p-form{
+        display: none;
+    }
+}
+
+@media only screen  and (max-width:900px){
+    .textarea-1{
+        right:-150%;
+        bottom:1%; 
+        text-align:center;
+    }
     
 }
+
+@media only screen  and (max-width:1200px){
+    .textarea-1{
+        right:-150%;
+        bottom:1%; 
+        text-align:center;
+    }
+    
+}
+
+
+
+
