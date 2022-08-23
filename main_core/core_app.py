@@ -13,7 +13,7 @@ app.config.from_object(config)
 
 def connect_db():
 
-    con = connect('main_core/db/article.db')
+    con = connect('/home/grirogii/progects/myPortfolio/main_core/db/article.db')
     con.row_factory = Row
 
     return con
@@ -24,7 +24,7 @@ def init_db():
     with app.app_context():
         db = get_db()
 
-        with app.open_resource('main_core/db/shem.sql','r') as f:
+        with app.open_resource('/home/grirogii/progects/myPortfolio/main_core/db/shem.sql','r') as f:
             db.cursor().executescript(f.read())
         db.commit()
 
